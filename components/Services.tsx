@@ -2,10 +2,9 @@ import React from "react";
 import { assets, serviceData } from "../assets/assets";
 import Image from "next/image";
 import Link from "next/link";
-import { PropsType } from "./Navbar";
-import { motion, scale } from "motion/react";
+import { motion } from "motion/react";
 
-const Services = ({ isDarkMode, setIsDarkMode }: PropsType) => {
+const Services = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

@@ -2,10 +2,14 @@ import Image from "next/image";
 import React from "react";
 import { assets } from "../assets/assets";
 import Link from "next/link";
-import { PropsType } from "./Navbar";
 import { motion } from "motion/react";
 
-const Footer = ({ isDarkMode, setIsDarkMode }: PropsType) => {
+export type PropsType = {
+  isDarkMode: boolean;
+  // setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Footer = ({ isDarkMode }: PropsType) => {
   return (
     <div className="mt-20">
       <motion.div

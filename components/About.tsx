@@ -1,10 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import { assets, infoList, toolsData } from "../assets/assets";
-import { PropsType } from "./Navbar";
 import { motion } from "motion/react";
 
-const About = ({ isDarkMode, setIsDarkMode }: PropsType) => {
+export type PropsType = {
+  isDarkMode: boolean;
+  // setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const About = ({ isDarkMode }: PropsType) => {
   return (
     <motion.div
       initial={{ scale: 0 }}

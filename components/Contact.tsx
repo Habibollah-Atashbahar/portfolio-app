@@ -2,10 +2,9 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import Image from "next/image";
-import { PropsType } from "./Navbar";
 import { motion } from "motion/react";
 
-const Contact = ({ isDarkMode, setIsDarkMode }: PropsType) => {
+const Contact = () => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -62,8 +61,9 @@ const Contact = ({ isDarkMode, setIsDarkMode }: PropsType) => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        I'd love to hearI'd love to hear from you! Whether you have a question,
-        a project idea, or just want to connect, feel free to reach out.
+        I Would love to hear I Would love to hear from you! Whether you have a
+        question, a project idea, or just want to connect, feel free to reach
+        out.
       </motion.p>
 
       <form className="max-w-2xl mx-auto" onSubmit={onSubmit}>

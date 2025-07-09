@@ -1,11 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { assets } from "../assets/assets";
-import Link from "next/link";
-import { PropsType } from "./Navbar";
+
 import { motion } from "motion/react";
 
-const Header = ({ isDarkMode, setIsDarkMode }: PropsType) => {
+const Header = () => {
   return (
     <div
       className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col
@@ -29,7 +28,7 @@ const Header = ({ isDarkMode, setIsDarkMode }: PropsType) => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo"
       >
-        Hi! I'm Habibollah Atashbahar
+        Hi! I am Habibollah Atashbahar
         <Image src={assets.hand_icon} alt="hand" className="w-6" />
       </motion.h3>
 

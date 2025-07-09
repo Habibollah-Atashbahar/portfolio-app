@@ -1,11 +1,14 @@
 import React from "react";
 import { assets, workData } from "../assets/assets";
 import Image from "next/image";
-import Link from "next/link";
-import { PropsType } from "./Navbar";
 import { motion } from "motion/react";
 
-const Work = ({ isDarkMode, setIsDarkMode }: PropsType) => {
+export type PropsType = {
+  isDarkMode: boolean;
+  // setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Work = ({ isDarkMode }: PropsType) => {
   return (
     <div
       id="work"
