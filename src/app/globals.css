@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  font-family: outfit;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001f;
+  --font-Outfit: var(--font-outfit);
+  --font-Ovo: var(--font-ovo);
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+  --grid-cols-custom: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  background-color: var(--color-darkTheme);
+  color: white;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.dark .dark-hover {
+  background-color: var(--color-darkHover);
+  color: white;
+}
+
+.dark .hover-dark:hover {
+  background-color: var(--color-darkHover);
+  color: white;
+  box-shadow: 2px 2px 1px white;
+  width: 100%;
+}
+/* 
+.dark .hover-elem {
+  background-color: var(--color-darkHover);
+  text-align: center;
+  transition: all 0.3s;
+  border-radius: 8px;
+  width: 100%;
+}
+.dark .hover-elem:hover {
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+} */
+
+.dark .dark-black {
+  color: #000;
+}
+
+.dark .dark-text {
+  color: white;
+}
+
+.dark .dark-textg {
+  color: rgb(202, 201, 201);
+}
+
+.dark .dark-hidden {
+  display: none;
+}
+
+.dark .dark-bgnone {
+  background: none;
+}
+
+.dark .dark-border {
+  border: 1px solid white;
+}
+
+.dark .dark-transparent {
+  background-color: transparent;
+}
+
+.dark .dark-shadow {
+  box-shadow: 3px 5px 4px white;
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: var(--grid-cols-custom);
+}
+
+.transition:hover {
+  transition: all 0.5s ease-in-out;
 }
