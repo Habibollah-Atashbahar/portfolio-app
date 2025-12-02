@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Header />
+      <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Services />
       <Work isDarkMode={isDarkMode} />

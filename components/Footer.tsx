@@ -19,7 +19,7 @@ const Footer = ({ isDarkMode }: PropsType) => {
         className="text-center"
       >
         <Image
-          src={isDarkMode ? assets.logo_dark : assets.logo}
+          src={isDarkMode ? assets.maka_dark : assets.maka_bg}
           alt="logo"
           className="w-36 mx-auto mb-2 rounded-2xl"
         />
@@ -30,7 +30,7 @@ const Footer = ({ isDarkMode }: PropsType) => {
             alt="mail"
             className="w-6"
           />
-          makkoranprogrammingteam@gmail.com
+          <Link href="mailto:makaseairan@gmail.com">makaseairan@gmail.com</Link>
         </div>
       </motion.div>
 
@@ -38,12 +38,12 @@ const Footer = ({ isDarkMode }: PropsType) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
-        className="text-center sm:flex items-center justify-between border-t 
+        className="text-center sm:flex items-center justify-center border-t 
       border-gray-400 mx-[10%] mt-12 py-6"
       >
-        <p>&copy; 2025 MPT. All rights reserved.</p>
+        <p>&copy; 2025 MAKA | Habibolah Atashbahar</p>
 
-        <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        {/* <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
             <Link
               href="https://github.com/Habibollah-Atashbahar"
@@ -67,7 +67,7 @@ const Footer = ({ isDarkMode }: PropsType) => {
               X
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </motion.div>
     </div>
   );

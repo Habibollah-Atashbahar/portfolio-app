@@ -15,11 +15,11 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "portfolio",
-  description: "Generated MeMyself",
+  title: "Maka",
+  description: "Generated Habibollah AB",
   icons: {
-    icon: "/logo_dark.png",
-    shortcut: "/logo_dark.png",
+    icon: "./assets/maka-bg.png",
+    shortcut: ".../assets/maka-dark.png",
   },
 };
 

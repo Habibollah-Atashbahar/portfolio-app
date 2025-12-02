@@ -35,6 +35,13 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import maka_bg from "./maka-bg.png";
+import maka_dark from "./maka-dark.png";
+import next from "./next.png";
+import react from "./react.png";
+import python from "./python.png";
+import go from "./go.png";
+import js from "./js.png";
 
 export const assets = {
   user_image,
@@ -74,85 +81,94 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  maka_bg,
+  maka_dark,
+  go,
+  next,
+  react,
+  python,
+  js,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "Habibollah AB",
+    description: "Front-End Developer",
     bgImage: "/work-1.png",
+    link: "https://github.com/Habibollah-Atashbahar",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Pourya Samimi",
+    description: "Back-End Developer",
     bgImage: "/work-2.png",
+    link: "https://github.com/itpourya",
   },
-  {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
-  },
-  {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
-  },
+  // {
+  //   title: "Photography site",
+  //   description: "Web Design",
+  //   bgImage: "/work-3.png",
+  // },
+  // {
+  //   title: "UI/UX designing",
+  //   description: "UI/UX Design",
+  //   bgImage: "/work-4.png",
+  // },
 ];
 
 export const serviceData = [
   {
     icon: assets.web_icon,
     title: "Web design",
-    description: "Web development is the process of building, programming...",
+    description: "Web development is the process of building, programming.",
     link: "",
   },
   {
     icon: assets.mobile_icon,
     title: "Mobile app",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Mobile app development involves creating software for mobile devices.",
     link: "",
   },
   {
     icon: assets.ui_icon,
-    title: "UI/UX design",
-    description:
-      "UI/UX design focuses on creating a seamless user experience...",
+    title: "Automation Tools",
+    description: "Providing custom automation tools for smarter operations.",
     link: "",
   },
-  {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
-  },
+  // {
+  //   icon: assets.graphics_icon,
+  //   title: "Graphics design",
+  //   description: "Creative design solutions to enhance visual communication.",
+  //   link: "",
+  // },
 ];
 
 export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    title: "Habibollah Atashbahar",
+    description: "Front-end Developer",
   },
-  {
-    icon: assets.edu_icon,
-    iconDark: assets.edu_icon_dark,
-    title: "Education",
-    description: "B.Tech in Computer Science",
-  },
+
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
-    title: "Projects",
-    description: "Built more than 5 projects",
+    title: "Reza Khanzehi",
+    description: "Project Manager",
+  },
+  {
+    icon: assets.code_icon,
+    iconDark: assets.code_icon_dark,
+    title: "Pourya Samimi",
+    description: "Back-end Developer",
   },
 ];
 
 export const toolsData = [
-  assets.vscode,
-  assets.firebase,
-  assets.mongodb,
-  assets.figma,
-  assets.git,
+  assets.python,
+  assets.js,
+  assets.next,
+  assets.react,
+  assets.go,
 ];

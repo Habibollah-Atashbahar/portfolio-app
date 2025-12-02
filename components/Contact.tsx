@@ -23,10 +23,12 @@ const Contact = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
-      event.currentTarget.reset();
+      event.currentTarget?.reset?.();
+      setResult("");
     } else {
       console.log("Error", data);
       setResult(data.message);
+      setResult("");
     }
   };
 
@@ -43,7 +45,7 @@ const Contact = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
-        Contact With Me
+        Contact
       </motion.h4>
 
       <motion.h2
@@ -52,10 +54,10 @@ const Contact = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
         className="text-center text-5xl font-Ovo"
       >
-        Get In Touch
+        Contact With Us
       </motion.h2>
 
-      <motion.p
+      {/* <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
@@ -64,7 +66,7 @@ const Contact = () => {
         I Would love to hear I Would love to hear from you! Whether you have a
         question, a project idea, or just want to connect, feel free to reach
         out.
-      </motion.p>
+      </motion.p> */}
 
       <form className="max-w-2xl mx-auto" onSubmit={onSubmit}>
         <motion.div

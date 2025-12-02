@@ -74,7 +74,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: PropsType) => {
           </li>
           <li>
             <Link href="#about" className="font-Ovo">
-              About me
+              About Us
             </Link>
           </li>
           <li>
@@ -84,12 +84,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: PropsType) => {
           </li>
           <li>
             <Link href="#work" className="font-Ovo">
-              My Work
+              Our Works
             </Link>
           </li>
           <li>
             <Link href="#contact" className="font-Ovo">
-              Contact me
+              Contact Us
             </Link>
           </li>
         </ul>
@@ -125,7 +125,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: PropsType) => {
           </button>
         </div>
         {/* Mobile Menu */}
-
         <ul
           ref={sideMenuRef}
           className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64
@@ -145,7 +144,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: PropsType) => {
           </li>
           <li>
             <Link href="#about" className="font-Ovo" onClick={closeMenu}>
-              About me
+              About Us
             </Link>
           </li>
           <li>
@@ -155,12 +154,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: PropsType) => {
           </li>
           <li>
             <Link href="#work" className="font-Ovo" onClick={closeMenu}>
-              My Work
+              Our Work
             </Link>
           </li>
           <li>
             <Link href="#contact" className="font-Ovo" onClick={closeMenu}>
-              Contact me
+              Contact Us
             </Link>
           </li>
         </ul>

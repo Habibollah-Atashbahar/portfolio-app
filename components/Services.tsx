@@ -20,7 +20,7 @@ const Services = () => {
         transition={{ duration: 0.3, delay: 0.2 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
-        What I Offer
+        Services
       </motion.h4>
       <motion.h2
         initial={{ scale: 0, opacity: 0 }}
@@ -28,7 +28,7 @@ const Services = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="text-center text-5xl font-Ovo"
       >
-        My Services
+        Our Services
       </motion.h2>
 
       <motion.p
@@ -36,10 +36,7 @@ const Services = () => {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.6 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
-      >
-        I am habibollah i am from chabahar, IRAN with 2 years of experience in
-        develop frontend websites and mobile apps.
-      </motion.p>
+      ></motion.p>
 
       <div className="gap-6 grid-auto">
         {serviceData.map(({ title, icon, description, link }, index) => (
@@ -61,10 +58,10 @@ const Services = () => {
               {description}
             </p>
 
-            <Link href={link} className="flex items-center gap-2 text-sm mt-5">
+            {/* <Link href={link} className="flex items-center gap-2 text-sm mt-5">
               Read More
               <Image src={assets.right_arrow} className="w-4" alt="arrow" />
-            </Link>
+            </Link> */}
           </motion.div>
         ))}
       </div>

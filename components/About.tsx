@@ -32,7 +32,7 @@ const About = ({ isDarkMode }: PropsType) => {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="text-center text-5xl font-Ovo"
       >
-        About Me
+        About Maka
       </motion.h2>
 
       <div
@@ -46,7 +46,7 @@ const About = ({ isDarkMode }: PropsType) => {
           className="w-64 sm:w-80 rounded-3xl max-w-none"
         >
           <Image
-            src={assets.user_image}
+            src={isDarkMode ? assets.maka_dark : assets.maka_bg}
             alt="user"
             className="w-full rounded-3xl"
           />
@@ -59,10 +59,16 @@ const About = ({ isDarkMode }: PropsType) => {
             transition={{ duration: 0.7, delay: 0.8 }}
             className="mb-10 max-w-2xl font-Ovo"
           >
-            I am an experienced Frontend Developer. I have a strong background
-            in modern JavaScript frameworks and a keen eye for design like React
-            and ReactNative and Next JS. This website serves as both my
-            portfolio and my resume, this Website and its my Resume
+            Maka is a dedicated software engineering team specializing in modern
+            web development and intelligent marine technologies. We design and
+            build scalable, high-performance web applications for businesses,
+            while simultaneously developing our own in-house project focused on
+            smart systems for marine vessels. Our mission is to combine clean
+            engineering, practical innovation, and real-world problem-solving to
+            create solutions that are not only powerful, but meaningful. From
+            backend systems and APIs to data-driven marine automation tools, we
+            ensure reliability, efficiency, and long-term maintainability in
+            everything we deliver.
           </motion.p>
 
           <motion.ul
@@ -101,7 +107,7 @@ const About = ({ isDarkMode }: PropsType) => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="my-6 text-gray-700 font-Ovo dark-text"
           >
-            Tools I Use
+            Tools We Use
           </motion.h4>
 
           <motion.ul
