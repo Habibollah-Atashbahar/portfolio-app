@@ -1,87 +1,83 @@
 @import "tailwindcss";
 
-* {
-  font-family: outfit;
-}
-
 @theme {
-  --color-lightHover: #fcf4ff;
-  --color-darkHover: #2a004a;
-  --color-darkTheme: #11001f;
-  --font-Outfit: var(--font-outfit);
-  --font-Ovo: var(--font-ovo);
-  --shadow-black: 4px 4px 0 #000;
-  --shadow-white: 4px 4px 0 #fff;
-  --grid-cols-custom: repeat(auto-fit, minmax(200px, 1fr));
+  /* --- تایپوگرافی --- */
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-ovo), Georgia, serif;
+  --font-fa: "Vazirmatn Variable", Tahoma, sans-serif;
+
+  /* --- پالت خام: آبی اقیانوسی + بنفش کم‌رنگ --- */
+  --color-ocean-300: #7dd3fc;
+  --color-ocean-400: #38bdf8;
+  --color-ocean-500: #0ea5e9;
+  --color-ocean-600: #0284c7;
+  --color-ocean-700: #075985;
+  --color-violet-300: #c4b5fd;
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+
+  /* --- توکن‌های معنایی: مقدار پیش‌فرض = حالت روشن، در .dark زیر بازتعریف می‌شود --- */
+  --color-canvas: #f5faff;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef6fc;
+  --color-ink: #0b1b2b;
+  --color-muted: #5b7083;
+  --color-line: #dbe7f0;
+  --color-primary: var(--color-ocean-600);
+  --color-primary-strong: var(--color-ocean-700);
+  --color-accent: var(--color-violet-400);
+  --color-accent-soft: #efe9ff;
+
+  --shadow-soft: 0 12px 40px -14px rgb(2 68 116 / 0.18);
 }
 
 .dark {
-  background-color: var(--color-darkTheme);
-  color: white;
+  --color-canvas: #071426;
+  --color-surface: #0d1f35;
+  --color-surface-alt: #0f2842;
+  --color-ink: #eaf2fa;
+  --color-muted: #8fa6bc;
+  --color-line: #16324d;
+  --color-primary: var(--color-ocean-400);
+  --color-primary-strong: var(--color-ocean-300);
+  --color-accent: var(--color-violet-300);
+  --color-accent-soft: #1c1638;
+
+  --shadow-soft: 0 16px 44px -14px rgb(0 0 0 / 0.55);
 }
 
-.dark .dark-hover {
-  background-color: var(--color-darkHover);
-  color: white;
+html[lang="fa"] {
+  --font-active: var(--font-fa);
 }
 
-.dark .hover-dark:hover {
-  background-color: var(--color-darkHover);
-  color: white;
-  box-shadow: 2px 2px 1px white;
-  width: 100%;
-}
-/* 
-.dark .hover-elem {
-  background-color: var(--color-darkHover);
-  text-align: center;
-  transition: all 0.3s;
-  border-radius: 8px;
-  width: 100%;
-}
-.dark .hover-elem:hover {
-  background-color: #000;
-  color: white;
-  border: 1px solid white;
-} */
-
-.dark .dark-black {
-  color: #000;
+body {
+  font-family: var(--font-active, var(--font-sans));
+  background-color: var(--color-canvas);
 }
 
-.dark .dark-text {
-  color: white;
+/* نورهای محیطی تزیینی — با CSS خالص، بدون هیچ درخواست شبکه‌ی اضافه */
+.bg-glow-ocean {
+  background:
+    radial-gradient(
+      600px circle at 20% 0%,
+      color-mix(in oklab, var(--color-ocean-400) 22%, transparent),
+      transparent 65%
+    ),
+    radial-gradient(
+      500px circle at 80% 10%,
+      color-mix(in oklab, var(--color-violet-400) 16%, transparent),
+      transparent 65%
+    );
 }
 
-.dark .dark-textg {
-  color: rgb(202, 201, 201);
+.bg-glow-violet {
+  background: radial-gradient(
+    700px circle at 50% 50%,
+    color-mix(in oklab, var(--color-violet-400) 14%, transparent),
+    transparent 70%
+  );
 }
 
-.dark .dark-hidden {
-  display: none;
-}
-
-.dark .dark-bgnone {
-  background: none;
-}
-
-.dark .dark-border {
-  border: 1px solid white;
-}
-
-.dark .dark-transparent {
-  background-color: transparent;
-}
-
-.dark .dark-shadow {
-  box-shadow: 3px 5px 4px white;
-}
-
-.grid-auto {
-  display: grid;
-  grid-template-columns: var(--grid-cols-custom);
-}
-
-.transition:hover {
-  transition: all 0.5s ease-in-out;
+::selection {
+  background-color: color-mix(in oklab, var(--color-primary) 30%, transparent);
 }

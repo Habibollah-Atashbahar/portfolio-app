@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource-variable/vazirmatn": "^5.3.0",
     "@netlify/next": "^1.4.9",
+    "lucide-react": "^1.28.0",
     "motion": "^12.23.0",
     "next": "15.3.5",
     "react": "^19.0.0",

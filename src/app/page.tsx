@@ -1,53 +1,26 @@
-"use client";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
+import Services from "@/components/Services";
+import Work from "@/components/Work";
 
-import { useEffect, useState } from "react";
-import Header from "../../components/Header";
-import About from "../../components/About";
-import Services from "../../components/Services";
-import Work from "../../components/Work";
-import Contact from "../../components/Contact";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
-
-interface Props {
-  isDarkMode: boolean;
-  // setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
+// این صفحه سرور-رندر است (بدون "use client")؛ فقط کامپوننت‌های داخلی که واقعاً
+// نیاز به تعامل دارند (تم، زبان، انیمیشن) کلاینتی هستند. این جدا‌سازی حجم
+// جاوااسکریپت اولیه‌ی صفحه را کم می‌کند و اولین رندر را سریع‌تر می‌کند.
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      setIsDarkMode(true);
-    } else {
-      setIsDarkMode(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "";
-    }
-  }, [isDarkMode]);
-
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Header isDarkMode={isDarkMode} />
-      <About isDarkMode={isDarkMode} />
-      <Services />
-      <Work isDarkMode={isDarkMode} />
-      <Contact />
-      <Footer isDarkMode={isDarkMode} />
+      <Navbar />
+      <main>
+        <Header />
+        <About />
+        <Services />
+        <Work />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }
