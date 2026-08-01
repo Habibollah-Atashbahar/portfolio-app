@@ -158,7 +158,7 @@ export const dictionary: Record<Locale, Dictionary> = {
             "PostgreSQL",
           ],
           githubUrl: "https://github.com/Habibollah-Atashbahar",
-          accent: "red",
+          accent: "ocean",
         },
         {
           slug: "pourya-samimi",
