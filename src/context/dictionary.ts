@@ -139,7 +139,7 @@ export const dictionary: Record<Locale, Dictionary> = {
             "Upstash Redis",
             "Vercel",
           ],
-          githubUrl: "https://github.com/Habibollah-Atashbahar/rozhn-cafe",
+          githubUrl: "https://github.com",
           liveUrl: "https://rozhn-cafe.vercel.app",
           accent: "coffee",
         },
