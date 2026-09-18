@@ -138,10 +138,30 @@ export const dictionary: Record<Locale, Dictionary> = {
             "TailwindCSS",
             "Upstash Redis",
             "Vercel",
+            "Rust",
+            "Axum",
+            "PostgreSQL",
+            "JWT"
           ],
-          githubUrl: "https://github.com/Habibollah-Atashbahar/rozhn-cafe",
+          githubUrl: "https://github.com/Habibollah-Atashbahar",
           liveUrl: "https://rozhn-cafe.vercel.app",
           accent: "coffee",
+        }, {
+          slug: "Meraj-Restaurant",
+          name: "Meraj-Restaurant",
+          role: "Full-Stack Introducing Website",
+          description:
+            "A Complete introducing Website For Meraj-Restaurant.",
+          techStack: [
+            "Next.js",
+            "TypeScript",
+            "TailwindCSS",
+            "Upstash Redis",
+            "Vercel",
+          ],
+          githubUrl: "https://github.com/Habibollah-Atashbahar/meraj",
+          liveUrl: "https://meraj-six.vercel.app/",
+          accent: "violet",
         },
         {
           slug: "habibollah-ab",
